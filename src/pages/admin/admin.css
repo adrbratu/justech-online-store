@@ -1,0 +1,226 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #392af4;
+  color: white;
+  font-size: bolder;
+}
+
+.adminInputElement {
+  margin: 10px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.buttonClusters {
+  margin: 10px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.adminInputElement label {
+  width: 200px;
+}
+
+.adminInputElement input {
+  width: 300px;
+  padding: 5px 0;
+}
+.adminInputElement textarea {
+  width: 300px;
+}
+
+.adminInputElement select {
+  width: 300px;
+  padding: 5px 0;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 3px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid white;
+  border: 0;
+}
+
+.saveButton {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0;
+  background-color: #e5f42a;
+}
+
+.saveButton2 {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  background-color: #f32c76;
+}
+
+.saveButton:hover {
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.saveButton2:hover {
+  background-color: lightgray;
+  color: black;
+  cursor: pointer;
+}
+
+.saveButton:active,
+.saveButton2:active {
+  color: white;
+  cursor: pointer;
+}
+
+.succes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.adminProduct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  padding: 15px;
+  margin: 30px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.productTitleCartAdmin {
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.productTitleCartAdmin:hover {
+  opacity: 0.8;
+}
+
+.adminProductSpecs {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  padding-left: 10px;
+}
+
+.adminProductSpecs img {
+  width: 100px;
+}
+
+.adminProductSpecs .description {
+  width: 100%;
+  font-size: 20px;
+}
+
+.adminButtons {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around;
+}
+
+.deleteButton,
+.editButton {
+  height: 100%;
+  display: flex;
+  padding: 10px;
+  margin: 5px;
+  align-items: space-between;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.deleteButton:hover,
+.editButton:hover {
+  cursor: pointer;
+  background-color: rgb(228, 228, 228);
+}
+
+.longDescriptionAdmin {
+  width: 100%;
+  margin: 30px;
+  text-align: justify;
+  text-justify: inter-word;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .adminInputElement {
+    margin: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .adminProduct {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .adminProductSpecs {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding-left: 10px;
+  }
+
+  .adminProductSpecs img {
+    width: 50%;
+    height: auto;
+  }
+
+  .adminProductSpecs .description {
+    width: 50%;
+    font-size: 0.7rem;
+  }
+
+  .longDescriptionAdmin {
+    width: 50%;
+    margin: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    align-self: center;
+  }
+}

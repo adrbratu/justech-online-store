@@ -1,0 +1,128 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingSpinner {
+  animation: rotate 2s linear infinite;
+}
+
+.productDisplay {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #392af4;
+  opacity: 1;
+  background-image: radial-gradient(
+    #eff0ff 0.30000000000000004px,
+    #392af4 0.30000000000000004px
+  );
+  background-size: 6px 6px;
+}
+
+.productPresentation {
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  border: 1px solid #392af4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.backShopping {
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+.backShopping:hover {
+  cursor: pointer;
+  color: #392af4;
+}
+
+#productPageImage {
+  margin: 10px;
+  height: auto;
+  max-width: 100%;
+}
+
+.productImageDescriptionPrice {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productImageDescriptionPrice .description {
+  text-align: center;
+}
+
+.addToCartButton {
+  background-color: transparent;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid rgb(19, 19, 19);
+  min-width: 100px;
+  padding: 10px 10px 5px 5px;
+}
+
+.addToCartButton[disabled]:hover {
+  border: 2px solid rgb(243, 44, 118);
+  background-color: #fff;
+  cursor: not-allowed;
+}
+
+.addToCartButton:hover {
+  background-color: #e5f42a;
+  cursor: pointer;
+}
+
+button span {
+  margin: 2px;
+}
+
+.productLongDescription {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.titleLongDescription {
+  background-color: #392af4;
+  width: 100%;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .productImageDescriptionPrice {
+    flex-direction: column;
+  }
+
+  .productPresentation {
+    width: 90%;
+  }
+}
